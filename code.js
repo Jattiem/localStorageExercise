@@ -122,7 +122,7 @@ document.querySelector('#delete').addEventListener('click',()=>{
     alert('Please refresh page to finsh delete process')
 })
 
-/******************* */
+/************************************************************************************************** */
 function calc() 
 		{
          var r,g,b,a="";
@@ -167,3 +167,4 @@ function calc()
 			document.mainForm.css.value = css;
 		 	document.mainForm.color.style.backgroundColor='#'+hex;
 		}
+/************************************************************************************************* */
