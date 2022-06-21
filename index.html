@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <div>
+            <input class="form-control" id="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="my-3">
+            <input class="form-control" id="surname" type="text" placeholder="Enter your surname" required>
+        </div>
+        <div>
+            <input class="form-control" id="age" type="number" placeholder="Enter your age" required>
+        </div>
+        <div class="my-3 ">
+            <button class="btn btn-primary" id="addRecord">Add Record</button>
+        </div>
+    </form>
+    <br>
+    <form id="color">
+        <!-- <div>
+            <input class="form-control" id="name2" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="my-2">
+            <input class="form-control" id="color" type="text" placeholder="Enter your color" required>  
+        </div>
+        <div class="my-3">
+            <button onclick="mycolor()" class="btn btn-primary" type="submit" id="Add">Add</button>
+        </div> -->
+        <h2 class="text-bg align-content-center">Results:</h2>
+        <div>
+            <label class="ms-3">Name</label>
+            <input type="text" class="form-control" id="name2" placeholder="Enter your name" required>
+        </div>
+        <div class="my-3">
+            <div>
+                <label class="ms-3">Red Color (R)</label><br>
+                <input type="number" class="form-control" id="rgbR"  placeholder="Enter the red color code">
+            </div>
+            <div>
+                <label class="ms-3">Green Color (G)</label><br>
+                <input type="number" class="form-control" id="rgbG"  placeholder="Enter the green color code">
+            </div>
+            <div>
+                <label class="ms-3">Blue Color (B)</label><br>
+                <input type="number" class="form-control" id="rgbB"  placeholder="Enter the blue color code">
+            </div>
+            <div>
+                <label class="ms-3">RGB Code</label>
+                <input type="text" class="form-control" id="RGB" readonly>
+            </div>
+        </div>
+        <div class="my-3">
+            <button class="btn btn-primary" id="Add">Add</button>
+            <button type="button" class="btn btn-primary" id="delete">Delete</button>
+        </div>
+    </form>
+    <br>
+    <form id="mainForm" name="mainForm" autocomplete="off">
+        <div class="form-group">
+           <label for="hex">Hex color code (#RRGGBB)</label>
+           <input type="text" id="hex" name="hex" placeholder="000000" minlength="3" maxlength="8" class="form-control form-control-lg" autofocus>
+        </div>
+        <div class="form-group">
+           <button type="button" title="Convert" class="btn btn-primary" onclick="calc()"> Convert</button>
+        </div>
+        <div class="form-group">
+           <label for="r">Red color (R)</label>
+           <input type="text" id="r" name="r" class="form-control form-control-lg" readonly>
+        </div>
+        <div class="form-group">
+           <label for="g">Green color (G)</label>
+           <input type="text" id="g" name="g" class="form-control form-control-lg" readonly>
+        </div>
+        <div class="form-group">
+           <label for="b">Blue color (B)</label>
+           <input type="text" id="b" name="b" class="form-control form-control-lg" readonly>
+        </div>
+        <div class="form-group">
+           <label for="css">CSS color</label>
+           <input type="text" id="css" name="css" class="form-control form-control-lg" readonly>
+        </div>
+        <div class="form-group">
+           <label for="color">Color preview</label>
+           <input type="text" id="color" name="color" class="form-control" style="height:70px; border:1px solid black" readonly>
+        </div>
+     </form>
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./code.js"></script>
+</body>
+</html>
